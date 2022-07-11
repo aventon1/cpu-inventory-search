@@ -13,6 +13,15 @@ response_dict = json.loads(response_string)
 # Access stores and inventory data in response dict
 nearest_stores = response_dict["response"]["data"]["nearestStores"]
 
+# Print header
+print("Store          Quantity")
+
+# Iterate through stores and print
+for store in nearest_stores:
+    store_name = store["storeName"]
+    store_quantity = store["quantityOnHand"]
+
+    print("{0:15} {1}".format(store_name, store_quantity))
 
 
 
