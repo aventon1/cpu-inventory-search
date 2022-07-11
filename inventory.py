@@ -9,3 +9,12 @@ response_string = json.dumps(response.json())
 
 # Convert string to dictionary
 response_dict = json.loads(response_string)
+
+# Access stores and inventory data in response dict
+nearest_stores = response_dict["response"]["data"]["nearestStores"]
+
+
+
+
+
+
