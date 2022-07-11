@@ -22,8 +22,3 @@ for store in nearest_stores:
     store_quantity = store["quantityOnHand"]
 
     print("{0:15} {1}".format(store_name, store_quantity))
-
-
-
-
-
